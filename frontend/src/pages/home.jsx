@@ -1,8 +1,8 @@
-import logo from './assets/Logo.svg'
-import './App.css'
+import { Link } from 'react-router-dom'
+import logo from '../assets/Logo.svg'
 
-function App() {
 
+function Home() {
   return (
     <>
       <header>
@@ -10,10 +10,10 @@ function App() {
           <div  className='navegacao'>
             <nav>
             <ul>
-              <li><a href="">SOBRE</a></li>
-              <li><a href=""> CONTATO</a></li>
-              <li><a href="">CONTA</a></li>
-              <li><a href="">PROJETOS</a></li>
+              <li> <Link className='nav-link' to="/about">SOBRE</Link> </li>
+              <li> <Link className='nav-link' to="/about">CONTATO</Link> </li>
+              <li> <Link className='nav-link' to="/about">CONTA</Link> </li>
+              <li> <Link className='nav-link' to="/">PROJETOS</Link> </li>
             </ul>
           </nav>
           </div>
@@ -47,8 +47,8 @@ function App() {
                       
               </div> 
               <div> 
-                <h4>Automoção Industrial</h4>
-                <p>Desenvolvemos sistemas que solucionam desafios de automação industrial</p>
+                <h4>Cibersegurança</h4>
+                <p>Temos como um dos focos de estudo contribuir para a cibersegurança</p>
               </div> 
             </div>
             {/* Fim Card 2 */}
@@ -59,8 +59,8 @@ function App() {
                      
               </div> 
               <div> 
-                <h4>Automoção Industrial</h4>
-                <p>Desenvolvemos sistemas que solucionam desafios de automação industrial</p>
+                <h4>Jogos Nativos e Desktop</h4>
+                <p>Cobrimos todas as etapas do desenvolvimento de jogos para celular e desktop</p>
               </div> 
             </div>
             {/* Fim Card 3 */}
@@ -71,8 +71,8 @@ function App() {
                      
               </div> 
               <div> 
-                <h4>Automoção Industrial</h4>
-                <p>Desenvolvemos sistemas que solucionam desafios de automação industrial</p>
+                <h4>Jogos Nativos e Desktop</h4>
+                <p>Cobrimos todas as etapas do desenvolvimento de jogos para celular e desktop</p>
               </div> 
             </div>
             {/* Fim Card 4 */}
@@ -87,8 +87,9 @@ function App() {
       <footer className='rodape'>
         <p>CEFET - RJ | IEEE IES | 2026</p>
       </footer>
+
   </>
   )
 }
 
-export default App
+export default Home

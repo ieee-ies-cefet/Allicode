@@ -46,8 +46,10 @@ header .navegacao>nav>ul>li{
   margin: 10px;
 }
 
-header .navegacao>nav>ul>li>a{
+header .navegacao>nav>ul>li>.nav-link{
   color: #FFF;
+  font-weight: normal;
+  
 }
 
 
