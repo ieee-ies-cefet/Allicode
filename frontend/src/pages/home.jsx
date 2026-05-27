@@ -11,8 +11,8 @@ function Home() {
             <nav>
             <ul>
               <li> <Link className='nav-link' to="/about">SOBRE</Link> </li>
-              <li> <Link className='nav-link' to="/about">CONTATO</Link> </li>
-              <li> <Link className='nav-link' to="/about">CONTA</Link> </li>
+              <li> <Link className='nav-link' to="/contact">CONTATO</Link> </li>
+              <li> <Link className='nav-link' to="/account">CONTA</Link> </li>
               <li> <Link className='ativo' to="/">PROJETOS</Link> </li>
             </ul>
           </nav>
@@ -21,7 +21,7 @@ function Home() {
 
 
       <section>
-        <div id='conteudo'> {/* Inicio Conteudo */}
+        <div id='area-principal-home'> {/* Inicio Conteudo */}
           <h1>BEM-VINDO</h1>
           <p>
             A <span>IEEE IES</span> transforma desafios em soluções de tecnologia. <br></br>

@@ -12,8 +12,8 @@ function About(){
                 <nav>
                     <ul>
                       <li> <Link className='ativo ' to="/about">SOBRE</Link> </li>
-                      <li> <Link className='nav-link' to="/about">CONTATO</Link> </li>
-                      <li> <Link className='nav-link' to="/about">CONTA</Link> </li>
+                      <li> <Link className='nav-link' to="/contact">CONTATO</Link> </li>
+                      <li> <Link className='nav-link' to="/account">CONTA</Link> </li>
                       <li> <Link className='nav-link' to="/">PROJETOS</Link> </li>
                     </ul>
                 </nav>
@@ -22,11 +22,10 @@ function About(){
 
         
       <section>
-        <div id='conteudo'> {/* Inicio Conteudo */}
+        <div id='area-principal-about'> {/* Inicio Conteudo */}
             <div className='texto-sobre'>
-                <h1>Sobre Nós</h1>
-
                 <ul>
+                    <h2>SOBRE NÓS</h2>
                     <li>
                         <p>
                         O ramo estudantil da IEEE no CEFET/RJ, campus Maria da Graça, destaca-se como um núcleo ativo de desenvolvimento acadêmico, 
@@ -45,10 +44,9 @@ function About(){
                     </li>
                     <li>
                         <p>
-                            No campus Maria da Graça, o grupo IES/IAS do IEEE promove workshops, minicursos, palestras técnicas e projetos práticos que estimulam
-                            o aprendizado ativo e o desenvolvimento de habilidades essenciais, como trabalho em equipe, liderança e resolução de problemas reais.
-                            Além disso, os membros têm acesso a uma rede global de conhecimento, podendo participar de conferências, competições e programas internacionais
-                            oferecidos  pelo IEEE. 
+                            No campus Maria da Graça, o grupo IES/IAS do IEEE promove workshops, minicursos, palestras técnicas e projetos práticos que estimulam o aprendizado
+                            ativo e o desenvolvimento de habilidades essenciais, como trabalho em equipe, liderança e resolução de problemas reais. Além disso, os membros têm acesso 
+                            a uma rede global de conhecimento, podendo participar de conferências, competições e programas internacionais oferecidos pelo IEEE.  
                         </p>
                     </li>
                     <li>
