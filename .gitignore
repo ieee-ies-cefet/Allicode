@@ -76,3 +76,8 @@ pids/
 *.tgz
 *.bak
 *.old
+
+#Docker (Local/Dev configurations)
+*.Dockerfile
+*.docker-compose.yml
+.docker/
