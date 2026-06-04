@@ -1,5 +1,14 @@
-const { Router } = require('express');
-const contactController = require('../controller/ContactControllers');
+
+import { Router } from 'express';
+
+
+import contactController from '../controller/ContactControllers.js';
+
+
 const rotaControle = Router();
+
+
 rotaControle.post('/contacts', contactController.ReceberForm);
-module.exports = rotaControle;
+
+
+export default rotaControle;

@@ -1,32 +1,36 @@
-async function ReceberForm (req, res){
-    const dadosforms = res.body;
-    const nome = dadosforms.name;
+class ContactControllers {
+
+  async ReceberForm(req, res) {
+    const dadosforms = req.body;
+    
+    const nome = dadosforms.nome;
     const email = dadosforms.email;
     const mensagem = dadosforms.mensagem;
 
-    if (nome == ""){
-        return res.status(400)("O nome é obrigatório.");
-
+    if (nome == "") {
+        return res.status(400).json({ message: "O nome é obrigatório." });
     }
 
-     if (email == ""){
-        return res.status(400)("O email é obrigatório.");
-
+    if (email == "") {
+        return res.status(400).json({ message: "O email é obrigatório." });
     }
 
-     if (mensagem == ""){
-        return res.status(400)("Informe-nos sua mensagem.");
-
+    if (mensagem == "") {
+        return res.status(400).json({ message: "Informe-nos sua mensagem." });
     }
+
     const dadosSalvos = {
         nomeusuario: nome,
         emailusuario: email,
         mensagemusuario: mensagem
-    }
+    };
 
     return res.status(200).json({
-        message: "Sua mensagem foi enviada!", dadosSalvos:dadosSalvos
+        message: "Sua mensagem foi enviada!", 
+        dadosSalvos: dadosSalvos
     });
+  }
 
 }
-module.exports = rotaControle;
+
+export default new ContactControllers();
