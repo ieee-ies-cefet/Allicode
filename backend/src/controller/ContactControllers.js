@@ -18,6 +18,14 @@ async function ReceberForm (req, res){
         return res.status(400)("Informe-nos sua mensagem.");
 
     }
+    const dadosSalvos = {
+        nomeusuario: nome,
+        emailusuario: email,
+        mensagemusuario: mensagem
+    }
 
-    return res.status(200)("Sua mensagem foi enviada!");
+    return res.status(200).json({
+        message: "Sua mensagem foi enviada!", dadosSalvos:dadosSalvos
+    });
+
 }
