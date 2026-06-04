@@ -29,3 +29,4 @@ async function ReceberForm (req, res){
     });
 
 }
+module.exports = rotaControle;
