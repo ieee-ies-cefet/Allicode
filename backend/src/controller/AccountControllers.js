@@ -1,5 +1,5 @@
 import bcrypt from 'bcrypt';
-class accountControllers {
+class AccountControllers {
     async Cadastro(req, res) {
 
         const dadosCad = req.body;
