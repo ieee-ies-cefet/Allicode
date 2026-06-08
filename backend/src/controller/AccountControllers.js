@@ -1,4 +1,5 @@
 import bcrypt from 'bcrypt';
+import banco from '../database/conexaodb.js';
 class AccountControllers {
     async Cadastro(req, res) {
 
@@ -8,6 +9,7 @@ class AccountControllers {
         const email = dadosCad.email;
         const senha = dadosCad.senha;
         const confirmarSenha = dadosCad.confirmarSenha;
+
         let senhaDigitada = null;
 
         if (nome == "") {
@@ -28,17 +30,18 @@ class AccountControllers {
         } else {
             senhaDigitada = await bcrypt.hash(senha, 10);
         }
+        const querySQL = `
+        INSERT INTO usuarios (nome, email, senha) 
+        VALUES ($1, $2, $3) 
+        RETURNING id, nome, email;
+    `;
+        const valores = [nome, email, senhaDigitada];
+        const resultado = await banco.query(querySQL, valores);
+        const usuarioCriado = resultado.rows[0];
 
-
-        const dadosSalvosCad = {
-            nomeCad: nome,
-            emailCad: email,
-            senhaCad: senhaDigitada
-        };
-
-        return res.status(200).json({
+        return res.status(201).json({
             message: "Cadastro Concluído com Sucesso",
-            dadosSalvosCad: dadosSalvosCad
+            usuarios: usuarioCriado
         });
     }
 
