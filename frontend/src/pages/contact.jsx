@@ -13,6 +13,7 @@ function Contact() {
                         <li> <Link className='nav-link' to="/about">SOBRE</Link> </li>
                         <li> <Link className='ativo' to="/contact">CONTATO</Link> </li>
                         <li> <Link className='nav-link' to="/account">CONTA</Link> </li>
+              <li> <Link className='nav-link' to="/login">LOGIN</Link> </li>
                         <li> <Link className='nav-link' to="/">PROJETOS</Link> </li>
                     </ul>
                 </nav>
@@ -22,7 +23,7 @@ function Contact() {
         <div id='area-principal-account'>
             <div className='titulo-formulario'>
                 
-                <h2>DADOS DE CADRASTO</h2>
+                <h2>FALE CONOSCO</h2>
 
                 <form id='form-contact' action="">
                     <div className='campo'>

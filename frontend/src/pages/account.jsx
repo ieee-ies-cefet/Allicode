@@ -13,6 +13,7 @@ function Account() {
                         <li> <Link className='nav-link' to="/about">SOBRE</Link> </li>
                         <li> <Link className='nav-link' to="/contact">CONTATO</Link> </li>
                         <li> <Link className='ativo' to="/account">CONTA</Link> </li>
+              <li> <Link className='nav-link' to="/login">LOGIN</Link> </li>
                         <li> <Link className='nav-link' to="/">PROJETOS</Link> </li>
                     </ul>
                 </nav>
@@ -22,7 +23,7 @@ function Account() {
         <div id='area-principal-account'>
             <div className='titulo-formulario'>
                 
-                <h2>FALE CONOSCO</h2>
+                <h2>DADOS DE CADASTRO</h2>
 
                 <form id='form-contact' action="">
                     <div className='campo'>

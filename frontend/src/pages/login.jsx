@@ -12,7 +12,8 @@ function Login() {
                     <ul>
                         <li> <Link className='nav-link' to="/about">SOBRE</Link> </li>
                         <li> <Link className='nav-link' to="/contact">CONTATO</Link> </li>
-                        <li> <Link className='ativo' to="/account">CONTA</Link> </li>
+                        <li> <Link className='nav-link' to="/account">CONTA</Link> </li>
+                        <li> <Link className='ativo' to="/login">LOGIN</Link> </li>
                         <li> <Link className='nav-link' to="/">PROJETOS</Link> </li>
                     </ul>
                 </nav>
@@ -22,9 +23,9 @@ function Login() {
         <div id='pagina-principal-login'>
             <div className='titulo-formulario'>
                 
-                <h2>Login</h2>
+                <h2>LOGIN</h2>
 
-                <form id='form-contact' action="">
+                <form id='form-login' action="">
                      <div className='campo'>
                         <label htmlFor="email">E-MAIL</label>
                         <input type="text" id='email' name='email' placeholder='Exemplo@gmail.com' />

@@ -14,6 +14,7 @@ function About(){
                       <li> <Link className='ativo ' to="/about">SOBRE</Link> </li>
                       <li> <Link className='nav-link' to="/contact">CONTATO</Link> </li>
                       <li> <Link className='nav-link' to="/account">CONTA</Link> </li>
+              <li> <Link className='nav-link' to="/login">LOGIN</Link> </li>
                       <li> <Link className='nav-link' to="/">PROJETOS</Link> </li>
                     </ul>
                 </nav>
