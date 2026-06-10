@@ -296,6 +296,7 @@ margin-left: 5px;
 
 
 .campo-texto>textarea{
+  resize: none; /* nao deixa a textarea se mexida*/
 box-sizing: border-box;
 width: 549px;
 height: 218px;
